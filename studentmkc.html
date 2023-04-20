@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>page 1</title>
+		
+			<script language="javascript">
+			function gofind(){
+				window.location="studentfc1.jsp";
+			}
+		</script>
+		<style>
+		 .firsth1{
+			color:red;
+			}
+		 .secondh2{
+			color:blue;
+			}
+		 .btsub{
+		     background-color:pink;
+			 width:57px;
+			 height:30px;
+			 }
+		  .btres{
+		     background-color:grey;
+			 width:57px;
+			 height:30px;
+			 }
+		   .btfind{
+		      background-color:violet;
+			  width:57px;
+			  height:30px;
+			  }
+			  h1{
+			   color:black;
+			   }
+			  td{
+			   font-size:20px;
+			   }
+			  
+			
+			  
+			.tborder{
+			    border-style:solid;
+				border-width:thick;
+				border-color:black;
+				}  
+		</style>
+	</head>
+	<body bgcolor="yellow">
+	<center>
+	<H1 class="firsth1"><u>ABIT GROUP OF INSTITUTIONS,CDA CUTTACK</u></h1>
+	<h2 align="center" class="secondh2"><u>STUDENT MARK ENTRY PORTAL</u></h2>
+	<hr width="100%" color="green" size="8"><br>
+	
+		<form name="f1" action="studentmks.jsp" method="post">
+				<table class="tborder">
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="txtName" autocomplete="on" placeholder="Enter your name"></td>
+				</tr>
+				<tr>
+					<td>Roll:</td>
+					<td><input type="text" name="txtRoll" autocomplete="on" placeholder="Enter your roll no"></td>
+				</tr>
+				<tr>
+					<td>Mark:</td>
+					<td><input type="text" name="txtMark" autocomplete="on" placeholder="Enter your mark"></td>
+				</td>
+			</table><br>
+			<input type="submit" name="btnsub" value="Submit" class="btsub">
+			<input type="reset"  name="btnres" value="Reset" class="btres">
+			<input type="button" name="btnfind" value="Find" onclick="gofind()" class="btfind">
+			</center>
+		</form>
+	</body>
+</html>
